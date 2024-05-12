@@ -1,0 +1,342 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; /* Use Roboto font for the body */
+}
+
+header {
+    position: relative; /* Ensure relative positioning for absolute elements inside */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(238, 238, 94);
+    padding: 20px;
+    color: rgb(24, 21, 21);
+}
+
+.logo,
+.logo2,
+.flag {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+}
+
+.logo img {
+    max-width: 100px;
+    animation: bounceLogo 1.5s infinite alternate; /* Animation for logo */
+}
+
+.logo2 img {
+    max-width: 100px;
+    animation: rotateLogo 10s infinite linear; /* Animation for logo2 */
+}
+
+.flag img {
+    max-width: 100px;
+    animation: pulseFlag 8s infinite alternate-reverse; /* Animation for flag */
+}
+
+.logo {
+    right: 10px; /* Adjust as needed */
+}
+
+.logo2 {
+    right: 120px; /* Adjust as needed */
+}
+
+.flag {
+    left: 10px; /* Adjust as needed */
+    margin-top: 10px; /* Adjust as needed */
+}
+
+.temple-name h1 {
+    margin-top: 40px; /* Adjust the margin-top value to add space */
+    margin-bottom: 10px; /* Add margin-bottom for additional space */
+    font-size: 36px;
+    animation: example 10s infinite;
+}
+
+.temple-name {
+    text-align: center;
+    margin-top: 23px; /* Adjust as needed */
+}
+
+.temple-name h2 {
+    font-size: 26px;
+}
+
+.toggle-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: inherit;
+    font-size: 1.5em;
+}
+
+.toggle-button:hover {
+    color: #555;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333; /* Background color for the navigation bar */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow navigation items to wrap */
+}
+
+.navbar li {
+    margin: 10px; /* Adjust margin for mobile */
+}
+
+.navbar a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 10px 16px; /* Adjust padding for smaller screens */
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif; /* Use Roboto font for the navigation links */
+    border-radius: 10px; /* Add rounded corners to the navigation links */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.navbar a:hover {
+    background-color: #555; /* Darken background color on hover */
+}
+
+.submenu {
+    position: absolute;
+    background-color: #333;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.submenu li {
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+.submenu a {
+    padding: 12px 16px;
+}
+
+.navbar li:hover .submenu {
+    display: block;
+}
+
+
+/*slider*/
+.slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+    
+}
+
+.slides img {
+    width: 100%;
+    /*height: 425px;*/
+    height: 552px;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+.arrow-left {
+    left: 0;
+}
+
+.arrow-right {
+    right: 0;
+}
+
+.pagination {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #333;
+}
+
+.center {
+    text-align: center;
+    font-size: 30px;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.image-container div {
+    margin: 10px;
+    font-size: 20px;
+}
+
+.image-container img {
+    width: 200px;
+}
+
+.image-container p {
+    text-align: center;
+    margin: 5px 0;
+}
+
+/* Footer Styles */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-section img {
+    max-width: 100px;
+    animation: bounce 1.5s infinite alternate;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    .logo {
+        position: absolute;
+        right: 10px; /* Adjust as needed */
+    }
+
+    .logo2 {
+        position: absolute;
+        right: 70px; /* Adjust as needed */
+    }
+
+    .logo,
+    .logo2,
+    .flag {
+        max-width: 60px; /* Minimize the size for desktop screens */
+    }
+
+    .navbar a {
+        padding: 10px 12px;
+    }
+
+    .footer-section img {
+        max-width: 80px;
+    }
+
+    .footer-section {
+        margin: 10px;
+    }
+
+    .contact-info {
+    flex-basis: 100%;
+    }
+
+@media only screen and (max-width: 480px) {
+    .flag img,
+    .logo img,
+    .logo2 img {
+        max-width: 70px; /* Adjust logo sizes for even smaller screens */
+    }
+
+    .temple-name h1 {
+        font-size: 37px; /* Further decrease font size for even smaller screens */
+    }
+
+    .temple-name h2 {
+        font-size: 30px;
+    }
+
+    .footer-section img {
+        max-width: 60px; /* Adjust footer logo size for even smaller screens */
+    }
+    }
+}
+
+/*Animation for the logo , logo 2  and the flag*/
+@keyframes bounceLogo {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+@keyframes rotateLogo {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes pulseFlag {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}

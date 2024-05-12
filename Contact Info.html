@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://kit.fontawesome.com/dd85db42b4.js" crossorigin="anonymous"></script>
+ <!--  <script src="https://smtpjs.com/v3/smtp.js"></script>--> 
+    <title>ශ්‍රී පුෂ්පාරාම විහාරස්ථානය</title>
+</head>
+<body>
+
+        <!--logo and name of the temple -->
+        <header>
+            <div class="logo">
+                <img src="Images/Logo.png" alt="Temple Logo">
+            </div>
+            <div class="logo2">
+                <img src="Images/Logo2.png" alt="Dharmachakra">
+            </div>
+            <div class="flag">
+                <img src="Images/image19.png">
+            </div>
+            <div class="temple-name">
+                <h1> ශ්‍රී පුෂ්පාරාම විහාරස්ථානය </h1>
+                <h2>කුස්වල - රද්දොළුගම </h2>
+            </div>   
+        </header>
+    
+        <!--navigation bar-->
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">විස්තර</a></li>
+                <li><a href="History.html">ඉතිහාසය</a></li>
+                <li><a href="Dayakasabhawa.html">දායක සභාව </a></li>
+                <li><a href="Karakasabha.html">කාරක සභාව </a></li>
+                <li><a href="KualaganaSamithiya.html">කුලගන සමිතිය</a></li>
+                <li><a href="Damma_School.html">දහම් පාසල</a></li>
+                <li><a href="YBA.html">තරුණ බෞද්ධ සංගමය</a></li>
+                <li><a href="Gallery.html">පින්තූර ගොනු </a></li>
+                <li><a href="Events.html">උත්සව</a></li>
+                <li><a href="Contact Info.html">සම්බන්ධ කරන්න</a></li>
+            </ul>
+        </nav>    
+
+    <!--Slider-->
+    <div class="slider">
+        <div class="slides">
+          <img src="Images/Temple01.jpeg" alt="Image 1">
+          <img src="Images/Temple2.jpeg" alt="Image 2">
+          <img src="Images/Temple3.jpeg" alt="Image 3">
+          <img src="Images/Temple4.jpeg" alt="Image 4">
+        </div>
+        <div class="arrow arrow-left">&#10094;</div>
+        <div class="arrow arrow-right">&#10095;</div>
+        <div class="pagination"></div>
+      </div>
+
+   <!-- Content -->
+   <div class="container">
+    <!-- First column -->
+    <div class="contact-info">
+        <h2><i class="fas fa-map-marker-alt"></i> <br>ලිපිනය </h2>
+        <p>ශ්‍රී පුෂ්පාරාමය , කුස්වල , රද්දොළුගම</p>
+    </div>
+    <br style="border-color: blue;">
+    <!-- Second column -->
+    <div class="contact-info">
+        <h2><i class="fas fa-phone"></i><br>සම්බන්ධ කරන්න</h2>
+        <p>දුරකථන අංකය : +94-112-293-080</p>
+        <p>ධම්මානන්ද හිමි : +94-77-621-1847</p>
+    </div>
+    <br style="border-color: rgb(222, 245, 9);">
+    <!-- Third column -->
+    <div class="contact-info">
+        <h2><i class="far fa-envelope"></i><br>ප්‍රතිචාර යොමු කරන්න </h2>
+        <p>sripushparamatemple@gmail.com</p>
+    </div>
+    <br style="border-color: rgb(31, 162, 94);">
+</div>
+
+
+<section class="contact">
+    <h2>යෝජනා චෝදනා හෝ ප්‍රතිචාර යොමු කරන්න</h2> 
+   <!-- <form action="https://formsubmit.co/your@email.com" method="POST">-->
+
+        <div class="input-box">
+            <div class="input-field field">
+                <input type="text" placeholder="Full Name" id="name" class="item" autocomplete="off">
+                <div class="error-txt">Full Name can't be blank</div>
+            </div>
+            <div class="input-field field">
+                <input type="email" placeholder="Email Address" id="email" class="item" autocomplete="off">
+                <div class="error-txt">Email Address can't be blank</div>
+            </div>
+            <div class="input-field field">
+                <input type="text" placeholder="Phone Number" id="phone" class="item" autocomplete="off">
+                <div class="error-txt">Phone Number can't be blank</div>
+            </div>
+            <div class="input-field field">
+                <input type="text" placeholder="Subject" id="subject" class="item" autocomplete="off">
+                <div class="error-txt">Subject can't be blank</div>
+            </div>
+            <div class="textarea-field field">
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" class="item" autocomplete="off"></textarea>
+                <div class="error-txt">Message can't be blank</div>
+            </div>
+        </div>
+        <button type="submit" onclick="sendwhatsapp();">ඔබේ පණිවිඩය ඇතුළත් කරන්න </button>
+    </form>
+</section>
+
+     <!--footer-->
+     <footer>
+        <div class="footer-section contact-info">
+            <img src="Images/Dharmachakra.png" alt="Logo">
+        
+        <div class="details">
+            <p>ශ්‍රී පුෂ්පාරාමය,
+                කුස්වල,
+                රද්දොළුගම </p>
+
+        </div>
+    </div>
+        <div class="footer-section navigation-links">
+            <ul>
+                <li><a href="index.html">විස්තර</a></li>
+                <li><a href="History.html">ඉතිහාසය</a></li>
+                <li><a href="Damma_School.html">දහම් පාසල</a></li>
+                <li><a href="Events.html"></a>උත්සව</li>
+            </ul>
+        </div>
+        <div class="footer-section societies">
+            <ul>
+                <li><a href="Dayakasabhawa.html">දායක සභාව </a></li>
+                <li><a href="Karakasabha.html">කාරක සභාව</a></li>
+                <li><a href="KualaganaSamithiya.html">කුලගන සමිතිය</a></li>
+                <li><a href="YBA.html">තරුණ බෞද්ධ සංගමය</a></li>
+            </ul>
+        </div>
+        <div class="footer-section social-media">
+            <ul>
+                <li><a href="https://www.facebook.com/profile.php?id=61556742159592"><i class="fab fa-facebook"></i> Facebook</a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+            </ul>
+        </div>
+        
+        
+    </footer>
+
+<!-- Other content of your website goes here -->
+<script src="Contact.js"></script>
+
+</body>
+</html>

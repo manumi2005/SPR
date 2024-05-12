@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Dayakasabhawa.css">
+    <script src="https://kit.fontawesome.com/dd85db42b4.js" crossorigin="anonymous"></script>
+    <title>ශ්‍රී පුෂ්පාරාම විහාරස්ථානය</title>
+</head>
+<body>
+    
+    <!--logo and name of the temple -->
+    <header>
+        <div class="logo">
+            <img src="Images/Logo.png" alt="Temple Logo">
+        </div>
+        <div class="logo2">
+            <img src="Images/Logo2.png" alt="Dharmachakra">
+        </div>
+        <div class="flag">
+            <img src="Images/image19.png">
+        </div>
+        <div class="temple-name">
+            <h1> ශ්‍රී පුෂ්පාරාම විහාරස්ථානය </h1>
+            <h2>කුස්වල - රද්දොළුගම </h2>
+        </div>  
+        <button class="toggle-button" onclick="toggleNav()">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+   
+    <!--Navigation bar-->
+    <nav id="navbar">
+        <ul class="navbar">
+            <li><a href="index.html">විස්තර</a></li>
+            <li><a href="History.html">ඉතිහාසය</a></li>
+            <li><a href="Societies.html">සමිති</a>
+                <ul class="submenu">
+                    <li><a href="Dayakasabhawa.html">දායක සභාව </a></li>
+                    <li><a href="Karakasabha.html">කාරක සභාව </a></li>
+                    <li><a href="KualaganaSamithiya.html">කුලගන සමිතිය</a></li>
+                </ul>
+            </li>
+            <li><a href="Damma_School.html">දහම් පාසල</a></li>
+            <li><a href="YBA.html">තරුණ බෞද්ධ සංගමය</a></li>
+            <li><a href="Gallery.html">පින්තූර ගොනු </a></li>
+            <li><a href="Events.html">උත්සව</a></li>
+            <li><a href="Contact Info.html">සම්බන්ධ කරන්න</a></li>
+        </ul>
+    </nav>
+
+
+   <!--Slider-->
+   <div class="slider">
+    <div class="slides">
+      <img src="Images/Temple01.jpeg" alt="Image 1">
+      <img src="Images/Temple2.jpeg" alt="Image 2">
+      <img src="Images/Temple3.jpeg" alt="Image 3">
+      <img src="Images/Temple4.jpeg" alt="Image 4">
+    </div>
+    <div class="arrow arrow-left">&#10094;</div>
+    <div class="arrow arrow-right">&#10095;</div>
+    <div class="pagination"></div>
+  </div>
+
+      <!-- First Photo -->
+      <!--
+      <div class="photo-container">
+        <h1>දායක සභාව</h1>
+        <div class="photo">
+            <div class="text-box">
+                <p style="text-align:center;"> සභාපති හිමියන් </p>
+            </div>
+            <img src="Images/TheroP.jpeg" alt="DammanandaTero">
+        </div>
+    </div>
+    <br>
+
+    <div class="photo-container">
+        <div class="photo">
+             <img src="Images/TheroP.jpeg" alt="DammanandaTero">
+            <div class="text-box">
+                 <p> සභාපති හිමියන් </p>
+            </div>
+        </div>
+        <div class="photo">
+                 <img src="Images/ProffestionB.png" alt="Photo 2">
+            <div class="text-box">
+                 <p>ලේකම් </p> 
+            </div>
+        </div>
+        <div class="photo">
+                <img src="Images/ProffestionB.png" alt="Photo 3">
+            <div class="text-box">
+                 <p> භාණඩාගාරික </p> 
+            </div>
+        </div>
+        <div class="photo">
+                 <img src="Images/ProffestionB.png" alt="Photo 4">
+            <div class="text-box">
+                 <p>උප සභාපති</p> 
+            </div>
+        </div>
+        <div class="photo">
+                <img src="Images/ProffestionB.png" alt="Photo 5">
+            <div class="text-box">
+                 <p>උප ලේකම් </p> 
+            </div>
+        </div>
+        <div class="photo">
+                <img src="Images/ProffestionB.png" alt="Photo 6">
+            <div class="text-box">
+                <p>උප භාණඩාගාරික </p> 
+            </div>
+        </div>
+
+        <div class="photo">
+           
+                 <img src="Images/ProffestionB.png" alt="Photo 7">
+            <div class="text-box">
+                 <p> සභාපති </p>
+            </div>
+        </div>
+        <div class="photo">
+                 <img src="Images/ProffestionB.png" alt="Photo 8">
+            <div class="text-box">
+                 <p>ලේකම් </p> 
+            </div>
+        </div>
+        <div class="photo">
+                <img src="Images/ProffestionB.png" alt="Photo 9">
+            <div class="text-box">
+                 <p> භාණඩාගාරික </p> 
+            </div>
+        </div>
+                 <h1>කුස්වල  ග්‍රාමය </h1>
+      
+        <div class="photo">
+                 <img src="Images/ProffestionB.png" alt="Photo 10">
+            <div class="text-box">
+                  <p> සභාපති</p> 
+            </div>
+        </div>
+        <div class="photo">
+                <img src="Images/ProffestionB.png" alt="Photo 11">
+            <div class="text-box">
+                <p>ලේකම් </p> 
+            </div>
+        </div>
+        <div class="photo">
+                <img src="Images/ProffestionB.png" alt="Photo 12">
+            <div class="text-box">
+                 <p> භාණඩාගාරික </p> 
+            </div>
+        </div>
+            <h1>තැම්පල ග්‍රාමය </h1>
+
+        <div class="photo">
+                 <img src="Images/ProffestionB.png" alt="Photo 13">
+            <div class="text-box">
+                 <p> සභාපති</p> 
+            </div>
+        </div>
+        <div class="photo">
+                <img src="Images/ProffestionB.png" alt="Photo 14">
+            <div class="text-box">
+                 <p>ලේකම් </p> 
+            </div>
+        </div>
+        <div class="photo">
+                <img src="Images/ProffestionB.png" alt="Photo 15">
+            <div class="text-box">
+                 <p> භාණඩාගාරික </p> 
+            </div>
+        </div>
+            <h1>අරඹ ග්‍රාමය </h1>
+    </div> 
+
+    <div class="other">
+        <div class="photo-group">
+             
+            <div class="photo">
+                    <img src="Images/ProffestionB.png" alt="Photo 16">
+                <div class="text-box">
+                    <p>නම</p>
+                </div>
+            </div>
+    
+            <div class="photo">
+                    <img src="Images/ProffestionB.png" alt="Photo 17">
+                <div class="text-box">
+                    <p>නම</p>
+                </div>
+            </div>
+    
+            <div class="photo">
+                    <img src="Images/ProffestionB.png" alt="Photo 18">
+                <div class="text-box">
+                    <p>නම</p>
+                </div>
+            </div>
+            <h1>අනුශාසක</h1>
+        </div>
+    </div>
+
+    
+
+<div class="centered-section">
+    <div class="photo">
+            <h1>කමිටු ලේකම් </h1>
+            <img src="Images/ProffestionB.png" alt="Photo 19">
+        <div class="text-box">
+           <p> නම </p>
+        </div>
+    </div>
+</div>
+-->
+
+ <!-- දායක සභාව -->
+ <div class="center">
+    <h2 style="font-weight: bold;" class="underline animation">දායක සභාව</h2>
+</div>
+
+<div class="center">
+    <img src="Images/Thero_Profession.jpeg" alt="සභාපති හිමියන්" width="200">
+    <p class="center">සභාපති හිමියන්</p>
+</div>
+
+<hr style="border-color: blue;">
+
+<!--  Four images and their names -->
+<div class="image-container">
+    <div>
+        <img src="Images/ProffestionB.png" alt="ලේකම්" width="100">
+        <p>ලේකම්</p>
+    </div>
+    <div>
+        <img src="Images/ProffestionB.png" alt="භාණඩාගාරික" width="100">
+        <p>භාණඩාගාරික</p>
+    </div>
+    <div>
+        <img src="Images/ProffestionB.png"alt="උප සභාපති" width="100">
+        <p>උප සභාපති</p>
+    </div>
+    <div>
+        <img src="Images/ProffestionB.png" alt="උප ලේකම්" width="100">
+        <p>උප ලේකම්</p>
+    </div>
+</div>
+
+<!-- 5. br tag with suitable color -->
+<hr style="border-color: rgb(252, 252, 49);">
+
+<!-- 6. කුස්වල ග්‍රාමය -->
+<div class="center">
+    <h2 class="underline">කුස්වල ග්‍රාමය</h2>
+</div>
+
+<!-- 7. Three images and their names -->
+<div class="image-container">
+    <div>
+        <img src="Images/ProffestionB.png" alt="සභාපති" width="100">
+        <p>සභාපති</p>
+    </div>
+    <div>
+        <img src="Images/ProffestionB.png" alt="ලේකම්" width="100">
+        <p>ලේකම්</p>
+    </div>
+    <div>
+        <img src="Images/ProffestionB.png" alt="භාණඩාගාරික" width="100">
+        <p>භාණඩාගාරික</p>
+    </div>
+</div>
+
+<!-- 8. br tag with suitable color -->
+<hr style="border-color: red;">
+
+<!-- 9. තැම්පල ග්‍රාමය -->
+<div class="center">
+    <h2 class="underline">තැම්පල ග්‍රාමය</h2>
+</div>
+
+<!-- 10. Three images and their names -->
+<div class="image-container">
+    <div>
+        <img src="Images/ProffestionB.png" alt="සභාපති" width="100">
+        <p>සභාපති</p>
+    </div>
+    <div>
+        <img src="Images/ProffestionB.png" alt="ලේකම්" width="100">
+        <p>ලේකම්</p>
+    </div>
+    <div>
+        <img src="Images/ProffestionB.png" alt="භාණඩාගාරික" width="100">
+        <p>භාණඩාගාරික</p>
+    </div>
+</div>
+<hr style="border-color: rgb(234, 175, 73);">
+
+<!-- 12. අරඹ ග්‍රාමය -->
+<div class="center">
+    <h2 class="underline">අරඹ ග්‍රාමය</h2>
+</div>
+<div class="image-container">
+    <div>
+        <img src="Images/ProffestionB.png" alt="සභාපති" width="100">
+        <p>සභාපති</p>
+    </div>
+    <div>
+        <img src="Images/ProffestionB.png" alt="ලේකම්" width="100">
+        <p>ලේකම්</p>
+    </div>
+    <div>
+        <img src="Images/ProffestionB.png" alt="භාණඩාගාරික" width="100">
+        <p>භාණඩාගාරික</p>
+    </div>
+</div>
+<hr style="border-color: orange;">
+
+<!-- අනුශාසක  -->
+<div class="center">
+    <h2 class="underline">අනුශාසක </h2>
+</div>
+<div class="image-container">
+    <div>
+        <img src="Images/ProffestionB.png" alt="නම" width="100">
+        <p>නම </p>
+    </div>
+    <div>
+        <img src="Images/ProffestionB.png" alt="නම" width="100">
+        <p>නම </p>
+    </div>
+    <div>
+        <img src="Images/ProffestionB.png" alt="නම" width="100">
+        <p>නම </p>
+    </div>
+</div>
+
+    <!--footer-->
+        <footer>
+            <div class="footer-section contact-info">
+                <img src="Images/Dharmachakra.png" alt="Logo">
+            
+            <div class="details">
+                <p>ශ්‍රී පුෂ්පාරාමය,
+                    කුස්වල,
+                    රද්දොළුගම </p>
+            </div>
+        </div>
+            <div class="footer-section navigation-links">
+                <ul>
+                    <li><a href="index.html">විස්තර</a></li>
+                    <li><a href="History.html">ඉතිහාසය</a></li>
+                    <li><a href="Damma_School.html">දහම් පාසල</a></li>
+                    <li><a href="Events.html">උත්සව</a></li>
+                </ul>
+            </div>
+            <div class="footer-section societies">
+                <ul>
+                    <li><a href="Dayakasabhawa.html">දායක සභාව </a></li>
+                    <li><a href="Karakasabha.html">කාරක සභාව</a></li>
+                    <li><a href="KualaganaSamithiya.html">කුලගන සමිතිය</a></li>
+                    <li><a href="YBA.html">තරුණ බෞද්ධ සංගමය</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social-media">
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=61556742159592"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                </ul>
+            </div>
+            
+            
+        </footer>
+    
+    <!-- Other content of your website goes here -->
+   
+    <script src="script.js"></script>
+    <script>
+        function toggleNav() {
+    var navbar = document.getElementById("navbar");
+    if (navbar.style.display === "none" || navbar.style.display === "") {
+        navbar.style.display = "block";
+    } else {
+        navbar.style.display = "none";
+    }
+}
+
+
+    </script>
+    
+    
+</body>
+</html>
+
+
